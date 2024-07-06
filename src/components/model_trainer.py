@@ -49,6 +49,8 @@ class ModelTrainer:
                 'CatBoost Classifer': CatBoostRegressor(verbose=False)
             }
 
+            
+
             model_report:dict=evaluate_models(X_train=X_train, y_train=y_train,X_test=X_test, y_test=y_test, models=models)
 
             # Getting the best model from the list of models based on R2-score
